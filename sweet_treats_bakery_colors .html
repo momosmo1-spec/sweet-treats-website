@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Treats Bakery</title>
+  <style>
+    :root {
+      --banner-bg: #f9c5d1;   /* light pink */
+      --section-light: #fff8f6; /* cream */
+      --section-pink: #fde4ec;  /* pale pink */
+      --text-dark: #5a2a2a;     /* bakery brownish */
+      --text-muted: #555;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      color: var(--text-dark);
+      background: #ffffff;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 32px auto 24px;
+      border: 1px solid #e0dcdc;
+      background: #fff;
+    }
+    .row {
+      padding: 26px 18px;
+      text-align: center;
+    }
+    .row.banner {
+      background: var(--banner-bg);
+      color: var(--text-dark);
+      padding: 32px 18px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+    }
+    .sub { margin: 0; font-size: 14px; }
+    .section-title {
+      margin: 0 0 10px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    p { margin: 0; font-size: 14px; color: var(--text-muted); }
+    .contact p { line-height: 1.6; }
+    .row.light { background: var(--section-light); }
+    .row.pink { background: var(--section-pink); }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 18px 0 26px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="row banner">
+      <h1>Welcome to Sweet Treats Bakery!</h1>
+      <p class="sub">Where every bite is a delight!</p>
+    </div>
+
+    <div class="row light">
+      <h3 class="section-title">About Us</h3>
+      <p>We are a cozy bakery specializing in homemade cakes and pastries. Our passion for baking is
+         evident in every delicious item we make!</p>
+    </div>
+
+    <div class="row pink">
+      <h3 class="section-title">Contact Us</h3>
+      <div class="contact">
+        <p>123 Bakers Street, Cakeland</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: orders@sweettreatsbakery.com</p>
+      </div>
+    </div>
+
+    <div class="row light">
+      <p>© 2023 Sweet Treats Bakery</p>
+    </div>
+  </div>
+
+  <footer>© 2023 Sweet Treats Bakery.</footer>
+</body>
+</html>
